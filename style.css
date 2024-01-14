@@ -1,0 +1,367 @@
+/*
+  IMPORTANT TO REMEMBER:
+  IDs uses '#'
+  Select elements with specifc class: ".[name of class] {}"
+*/
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color: mintcream;
+    background-image: url('');
+
+    /* Customize the font, size, and color for text*/
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translate(0px);
+  opacity: 1;
+}
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+h2{
+  text-align: center;
+  background-color: white;
+  color: cadetblue;
+}
+
+h3 {
+text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+a:visited {
+  color: rebeccapurple;
+}
+a:hover {
+color: lightcoral;
+}
+a:link {
+  color:gray;
+}
+a:active {
+  color: darkblue;
+}
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+
+}
+
+ol li {
+
+}
+
+
+ul {
+
+}
+
+ul li {
+
+}
+
+
+
+.footer-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  border: 3px dashed lightgreen;
+  background-color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Select and style elements by class name or ID */
+
+
+
+/* Example: This styles elements with class="header"*/
+.header-container {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/*PETITION STUFF*/
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+
+/* Example: This styles an element with an id="header-img" */
+#header-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 50%;
+}
+
+.header-item:nth-of-type(1){
+  width: auto;
+}
+
+.header-item:nth-of-type(2){
+  width: auto;
+  
+}
+
+.footer-item:nth-of-type(1){
+  width: auto;
+}
+
+.footer-item.footer-item:nth-of-type(2){
+  width: auto;
+}
+#header-button {
+  background-color: #57FF9F;
+  color: darkgreen;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 10%;
+  margin: 10px;
+  border: 4px solid darkgreen;
+}
+
+#header-button:hover {
+  color: white;
+  border: 4px solid #6BA282;
+  cursor: pointer;
+}
+
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  background-color: palegreen;
+  opacity: .5;
+  list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+  position: z-index;
+  top: 0;
+  width: 100%;
+  /*I don't know what to set for margin-bottom*/
+  margin-bottom: 10px;
+
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: Arial;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: lightskyblue;
+    padding: 8px;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #23668F;
+}
+
+
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Add style to button */
+#theme-button {
+  text-decoration: underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: lightgray;
+  padding: 8px;
+  border: dotted lightblue;
+  border-width: 2px;
+  cursor: pointer;
+}
+#theme-button:hover {
+  background-color:#404040;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: #404040;
+  color: white;
+  
+}
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+#close {
+  background: darkblue;
+  padding: 8px;
+  color: white;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #BCFFF6; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pics {
+  position: center;
+}

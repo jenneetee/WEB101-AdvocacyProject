@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Climate Change & What It Is...</title>
+  <link rel="icon" href="img/9903179.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+<body>
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content"> placeholder content</p>
+        <!-- button here (stretch feature) -->
+        <button id="close">Click Here to Close</button>
+      </div>
+      <img id="happyearth" src="img/happy_earth.jpg" />
+    </div>
+
+  </div>
+
+  <!-- Part 1: Navbar Starter Code -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About This Website</a></li>
+      <li><a href="#petition">Petition</a></li>
+      <li><a href="#experts">What Can We Do?</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button </li>
+        <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+
+  <div class="header-container" id="home">
+    <div id="header-img">
+      <img src="img/earth.png" width="200" height="200" />
+    </div>
+    <div class="header-item">
+      <h1>Climate Change & What It Is...</h1>
+    </div>
+    <div class="header-item">
+      <h3>Figuring out what climate change is and how it happens.</h3>
+    </div>
+    <br>
+    <br>
+    <button id="header-button" onclick="window.location.href = 'https://www.instagram.com/climatereality/';">
+      Climate Reality Instagram
+    </button>
+    <button id="header-button" onclick="window.location.href = 'https://twitter.com/unfccc?lang=en';">
+      UN Climate Change Twitter
+    </button>
+  </div>
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <br>
+  <div class="revealable">
+    <h2 id="about">About Climate Change</h2>
+    <p>Climate change is a serious issue that the Earth has been facing for many years.
+      It refers to the change in usual weather patterns in a certain area. For instance, either rain, snow, or other
+      types
+      of precipitation could be imbalanced due to climate change.
+
+      <a
+        href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-climate-change-k4.html">(Source)</a>
+    </p>
+    <br>
+    <img src="img/airpollution.jpg" alt="A factory emitting smoke into the air" class="center" />
+    <p><i>The emission of fossil fuel by many factories is one of the contributing causes to climate change.</i></p>
+    <br>
+
+    <img src="img/pb.jpg" alt="Two polar bears on an ice cap" width="300" height="168" class="center" id="impact" />
+    <p><i>Since the rise in temperatures
+        are melting ice caps, polar bears are being stripped from their natural, cold habitat. This poses a threat to
+        their species.</i></p>
+  </div>
+
+  <br>
+  <div class="revealable">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G4H1N_yXBiA" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      class="center" allowfullscreen></iframe>
+  </div>
+  <br>
+  <div class="revealable">
+    <h2>What Can We Do?</h2>
+
+    <p> The small changes that we can make in our lifestyles to limit the effects of climate change can be easy to make!
+      This includes utilizing cleaner energy transportation (ex: cycling, carpooling) and turning off unused household
+      electronics that uses coal, oil, and gas. </p>
+    <div class="pics">
+    <img src="img/save-energy-home.jpg" alt="person turning off lights" width='300' height="160" />
+    <img src="img/cycling.jpg" alt="businessmen cycling" width='300' height="160" />
+    </div>  
+  </div>
+  <br>
+  <!--- News --->
+  <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+  <div class="revealable">
+    <h2 id="experts">Recent News</h2>
+
+    <a class=""
+      href="https://www.npr.org/2023/03/02/1160471867/climate-change-is-fueling-more-conflict-between-humans-and-wildlife">
+      <article>
+        <h3>Climate Change Leads to Rising Tensions Between Humans & Wildlife</h3>
+        <p>NPR discusses the many cases of climate change that leads to humans and wildlife pititng against each other
+          for
+          decades.</p>
+      </article>
+
+    </a>
+    <a class=""
+      href="https://apnews.com/article/climate-emissions-global-warming-carbon-dioxide-coal-494ef490f16abe381ea2a4107f779670"
+      <article>
+      <h3>Carbon dioxide emissions reached a record high in 2022</h3>
+      <p> AP reports that communities around the world emitted more carbon dioxide in 2022 than any other year on
+        record.
+      </p>
+      </article>
+  </div>
+
+  </a>
+
+  <br>
+  <br>
+  <br>
+  <div class="petition revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        Climate change is a serious issue that is affecting the whole world. With global temperatures rising, weather is
+        severely imbalanced, and it is getting harder for nature to keep up with these changes. Help us spread awareness
+        of this serious issue by signing this petition to get lawmaker's attention!
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ Penny from San Francisco supports this.</p>
+        <p>🖊️ Sam from Austin supports this.</p>
+        <p>🖊️ V.J. from Atlanta supports this.</p>
+        <p></p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" placeholder="First Name">
+
+      <label for="htown">Hometown</label>
+      <input type="text" id="htown" placeholder="Hometown">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Email">
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+<div class="footer-container">
+  <a class="footer-item" href="https://www.epa.gov/climate-change" style="display:inline-block;" ">What Experts Say </a> 
+  <a class=" footer-item"
+    href=" https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature"
+    style="display:inline-block;">Global Temperatures</a>
+</div>
+<br>
+<br>
+<br>
+
+<!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+<script src="https://replit.com/public/js/replit-badge-v2.js" theme="blurple" position="bottom-right"></script>
+</body>
+
+</html>
